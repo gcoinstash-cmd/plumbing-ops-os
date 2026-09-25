@@ -43,11 +43,11 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
             <div>
               <h2 className="text-xl font-bold tracking-tight text-white flex items-center gap-2">
                 HydroForce Operations Gateway
-                <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
+                <span className="text-xs font-semibold tracking-wider uppercase font-mono px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
                   Turnkey Admin
                 </span>
               </h2>
-              <p className="text-xs text-slate-400 font-mono mt-0.5">Hydraulic Pressure & Dispatch Control</p>
+              <p className="text-base text-zinc-200 leading-relaxed font-mono mt-0.5">Hydraulic Pressure & Dispatch Control</p>
             </div>
           </div>
           <button
@@ -64,13 +64,13 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               <Key className="w-5 h-5 text-cyan-400 mt-0.5 flex-shrink-0" />
               <div>
                 <h4 className="text-sm font-semibold text-cyan-300">Auditor Passkey Bypass</h4>
-                <p className="text-xs text-slate-400 mt-1 leading-relaxed">
+                <p className="text-base text-zinc-200 leading-relaxed mt-1 leading-relaxed">
                   Click the instant passkey button below to auto-inject credentials and inspect live hydraulic telemetries, backflow certification logs, and commercial hydro-jetting rosters.
                 </p>
                 <button
                   type="button"
                   onClick={handleBypass}
-                  className="mt-3 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-cyan-500 text-slate-950 text-xs font-mono font-bold tracking-wider hover:bg-cyan-400 transition-all shadow-lg shadow-cyan-500/20"
+                  className="mt-3 inline-flex items-center gap-2 px-5 py-3 min-h-[44px] rounded-lg bg-cyan-500 text-slate-950 text-base font-semibold min-h-[44px] font-mono font-bold tracking-wider hover:bg-cyan-400 transition-all shadow-lg shadow-cyan-500/20"
                 >
                   <Lock className="w-3.5 h-3.5" />
                   [ AUTO-FILL PLUMBING PASS ]
@@ -80,7 +80,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
 
             <form onSubmit={handleLogin} className="space-y-4">
               <div>
-                <label className="block text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">
+                <label className="block text-sm font-semibold font-mono uppercase tracking-wider text-slate-400 mb-2">
                   Emergency Dispatch Passkey
                 </label>
                 <div className="relative">
@@ -93,7 +93,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                   />
                   <button
                     type="submit"
-                    className="absolute right-2 top-2 bottom-2 px-4 bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 rounded-lg text-xs font-mono transition-colors flex items-center gap-1.5"
+                    className="absolute right-2 top-2 bottom-2 px-4 bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 rounded-lg text-base font-semibold min-h-[44px] font-mono transition-colors flex items-center gap-1.5"
                   >
                     Enter <ArrowRight className="w-3 h-3" />
                   </button>
@@ -111,7 +111,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                 <CheckCircle className="w-5 h-5 text-emerald-400" />
                 <div>
                   <h4 className="text-sm font-semibold text-emerald-300">HydroForce Master Access Granted</h4>
-                  <p className="text-xs text-slate-400 font-mono mt-0.5">Session: PLUMB-DISPATCH-TX-2026</p>
+                  <p className="text-base text-zinc-200 leading-relaxed font-mono mt-0.5">Session: PLUMB-DISPATCH-TX-2026</p>
                 </div>
               </div>
               <span className="px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 text-xs font-mono font-bold">
@@ -123,17 +123,17 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               <div className="p-3 bg-[#080c10] rounded-xl border border-white/5 text-center">
                 <Database className="w-4 h-4 text-cyan-400 mx-auto mb-1" />
                 <div className="text-lg font-bold font-mono text-white">4 Tables</div>
-                <div className="text-[10px] text-slate-400 uppercase font-mono">Supabase SQL</div>
+                <div className="text-xs font-semibold tracking-wider text-slate-400 uppercase font-mono">Supabase SQL</div>
               </div>
               <div className="p-3 bg-[#080c10] rounded-xl border border-white/5 text-center">
                 <Server className="w-4 h-4 text-teal-400 mx-auto mb-1" />
                 <div className="text-lg font-bold font-mono text-white">42 PSI</div>
-                <div className="text-[10px] text-slate-400 uppercase font-mono">Telemetry Baseline</div>
+                <div className="text-xs font-semibold tracking-wider text-slate-400 uppercase font-mono">Telemetry Baseline</div>
               </div>
               <div className="p-3 bg-[#080c10] rounded-xl border border-white/5 text-center">
                 <Cpu className="w-4 h-4 text-sky-400 mx-auto mb-1" />
                 <div className="text-lg font-bold font-mono text-white">100%</div>
-                <div className="text-[10px] text-slate-400 uppercase font-mono">RLS Security</div>
+                <div className="text-xs font-semibold tracking-wider text-slate-400 uppercase font-mono">RLS Security</div>
               </div>
             </div>
 

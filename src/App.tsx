@@ -134,11 +134,11 @@ export const App: React.FC = () => {
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-mono text-base font-black tracking-tight text-white">HYDROFORCE</span>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 font-bold uppercase">
+                <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 font-bold uppercase">
                   OPS OS v1.0
                 </span>
               </div>
-              <p className="text-[11px] font-mono text-slate-400">Commercial Hydraulic Dispatch & Backflow Rig</p>
+              <p className="text-xs font-semibold font-mono text-slate-400">Commercial Hydraulic Dispatch & Backflow Rig</p>
             </div>
           </div>
 
@@ -260,7 +260,7 @@ export const App: React.FC = () => {
                     <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-white/5">
                       <div className="flex items-center gap-2">
                         <span className="text-xs font-mono font-bold text-cyan-400">{t.id}</span>
-                        <span className={`text-[10px] font-mono px-2 py-0.5 rounded font-bold uppercase ${
+                        <span className={`text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded font-bold uppercase ${
                           t.severity === 'CRITICAL' ? 'bg-rose-500/20 text-rose-300 border border-rose-500/30' :
                           t.severity === 'ELEVATED' ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30' :
                           'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'
@@ -275,8 +275,8 @@ export const App: React.FC = () => {
 
                     <div className="pt-3">
                       <h4 className="text-base font-bold text-white">{t.client}</h4>
-                      <p className="text-xs text-slate-400 flex items-center gap-1 mt-0.5">
-                        <MapPin className="w-3 h-3 text-slate-500" /> {t.location}
+                      <p className="text-base text-zinc-200 leading-relaxed flex items-center gap-1 mt-0.5">
+                        <MapPin className="w-3 h-3 text-slate-300" /> {t.location}
                       </p>
                       <p className="text-xs text-cyan-200/80 mt-2 bg-black/30 p-2.5 rounded-xl border border-white/5">
                         {t.issue}
@@ -323,7 +323,7 @@ export const App: React.FC = () => {
                   <div className="w-full bg-black/60 rounded-full h-2.5 overflow-hidden border border-white/5">
                     <div className="bg-gradient-to-r from-cyan-500 to-teal-400 h-2.5 rounded-full w-[82%]" />
                   </div>
-                  <div className="flex justify-between text-[10px] font-mono text-slate-500">
+                  <div className="flex justify-between text-xs font-semibold tracking-wider font-mono text-slate-300">
                     <span>Target: &lt; 15 mins</span>
                     <span className="text-cyan-400">Elapsed: 04m 12s</span>
                   </div>
@@ -364,7 +364,7 @@ export const App: React.FC = () => {
             <div className="flex items-center justify-between">
               <div>
                 <h3 className="text-lg font-bold text-white">Underground CCTV Scope Diagnostics</h3>
-                <p className="text-xs text-slate-400 font-mono">Ultra-HD Pan & Tilt Sonde Pipeline Inspections</p>
+                <p className="text-base text-zinc-200 leading-relaxed font-mono">Ultra-HD Pan & Tilt Sonde Pipeline Inspections</p>
               </div>
               <button
                 onClick={() => setIsAdminOpen(true)}
@@ -386,10 +386,10 @@ export const App: React.FC = () => {
                   <div className="relative aspect-video rounded-xl bg-black border border-cyan-500/30 overflow-hidden flex items-center justify-center group">
                     <div className="absolute inset-0 bg-radial from-cyan-950/20 to-black/90 pointer-events-none" />
                     <Camera className="w-8 h-8 text-cyan-500/40 group-hover:text-cyan-400 transition-colors" />
-                    <div className="absolute top-2 left-2 text-[10px] font-mono text-cyan-300 bg-black/60 px-2 py-0.5 rounded border border-cyan-500/20">
+                    <div className="absolute top-2 left-2 text-xs font-semibold tracking-wider font-mono text-cyan-300 bg-black/60 px-2 py-0.5 rounded border border-cyan-500/20">
                       REC ● 1080p 60fps
                     </div>
-                    <div className="absolute bottom-2 right-2 text-[10px] font-mono text-slate-400 bg-black/60 px-2 py-0.5 rounded">
+                    <div className="absolute bottom-2 right-2 text-xs font-semibold tracking-wider font-mono text-slate-400 bg-black/60 px-2 py-0.5 rounded">
                       SONDE: 512 Hz
                     </div>
                   </div>
@@ -423,7 +423,7 @@ export const App: React.FC = () => {
             <div className="flex flex-wrap items-center justify-between gap-4">
               <div>
                 <h3 className="text-lg font-bold text-white">Commercial Backflow Certification Registry</h3>
-                <p className="text-xs text-slate-400 font-mono">State-Mandated Annual Cross-Connection Prevention Log</p>
+                <p className="text-base text-zinc-200 leading-relaxed font-mono">State-Mandated Annual Cross-Connection Prevention Log</p>
               </div>
               <button
                 onClick={() => setIsAdminOpen(true)}
